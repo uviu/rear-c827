@@ -1,0 +1,34 @@
+aufgabe 1:
+
+subaufgabe 1:
+prozessor | cycle-time  | cpi
+p1        | 0.33ns      | 1.5
+p2        | 0.4ns       | 1.0
+p3        | 0.33ns      | 2.2
+
+taktraten:
+taktrate  = 1/cycle-time
+p1: 1/0.33  ns  = 3.03  GHz
+p2: 1/0.4   ns  = 2.5   GHz
+p3: 1/0.25  ns  = 4     GHz -> p3 höchste taktrate
+
+subaufgabe2:
+cpu-time  = instruction-count * cpi / cycle-time
+p1: 1.5 * 0.33  ns  = 0.495 ns
+p2: 1.0 * 0.4   ns  = 0.4   ns
+p3: 2.2 * 0.25  ns  = 0.55  ns
+
+-->p2 ist der schnellste und p3 der langsamste
+-->grund: computer mit höchster taktrate braucht mehr cycles pro instruction
+
+subaufgabe3:
+benchmarks sind weiterhin relevant, da aus datenblatt nicht eindeutig bestimmen lässt, welcher prozessor für welche aufgaben geeignet sind
+
+aufgabe2:
+nachteile vom mips:
+- instruction time und execution time sind programmabhängig/workloadspezifisch
+  ->  keine universelle Leistungsbestimmung möglich
+- mips /= auführungszeit 
+- bei unterschieldichem insturctionset ist cpu mit höcherer #instrucitons im vorteil
+
+
