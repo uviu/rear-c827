@@ -1,0 +1,74 @@
+aufgabe 1:
+
+          Pentium 4 Prescott    Core i5 Ivy Bridge
+takt      3.6   GHz             3.4   GHz
+spannung  1.25  V               0.9   V
+pstat     10    W               30    W
+pdyn      90    W               40    W
+
+elektrische Kapazität 
+==  2 * dynamischeleistung / (spannung^2  * taktfrequenz)
+p4  : 3.2 * 10^-8 = 32  nF
+ci5 : 2.9 * 10^-8 = 29  nF
+
+statische leistung prozentual:
+p4  : 10    %
+ci5 : 42.9  %
+
+aufgabe 2:
+subaufgabe  1:
+
+clocktime = (instructioncount  * cpi) / clockrate
+frequenz  : 2 Ghz
+
+arithmetische befehle : 2.56  * 10^9      cpi : 1
+clocktime : (1  * 2.56  * 10^9) / 2 GHz = 1.28  s
+
+lade-/speicherbefehle : 1.28  * 10^9      cpi :12
+clocktime : (12 * 1.28  * 10^9) / 2 Ghz = 7.68  s
+
+sprungbefehle         : 256  * 10^6       cpi : 5
+clocktime : (5  * 256   * 10^6) / 2 Ghz = 7.68  s
+
+clocktime gesamt  : 9.6 s
+
+subaufgabe  2:
+
+1 Kern    (x  / 0.7) 
+ab      : 1.83    s
+lsb     : 10.97   s  
+sb      : 0.64    s
+gesamt  : 13.44   s
+
+2 Kern    (x  / 1.4)
+ab      : 0.91    s
+lsb     : 5.49    s  
+sb      : 0.64    s
+gesamt  : 7.04    s
+
+4 Kern    (x  / 2.8)
+ab      : 0.46    s
+lsb     : 2.74    s  
+sb      : 0.64    s
+gesamt  : 3.84    s
+
+8 Kern    (x  / 5.6)
+ab      : 0.23    s
+lsb     : 1.37    s  
+sb      : 0.64    s
+gesamt  : 2.24    s
+
+--> executiontime improved  = executiontime affected  / improvementfactor + executiontime unaffected
+
+subaufgabe  3 :
+
+speedup = timewithoutenhancement  / timewithenhancement
+1 Kern  | 2 Kerne | 3 Kerne | 4 Kerne
+0.71    | 1.36    | 2.5     | 4.28
+
+--> maximal speedup von p (anzahl prozessoren)
+--> in der praxis niemals erreichbar
+
+
+
+
